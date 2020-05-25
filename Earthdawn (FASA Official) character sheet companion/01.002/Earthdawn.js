@@ -8318,7 +8318,7 @@ Get these in pairs, char sheet attrib and token status, get them ORed, then figu
 												+ ("equipment" in save 	? "<p>" + textBlock( save[ "equipment" ] ) + "</p>" : "" )
 												+ ("loot" in save 	? "<p>" + textBlock( save[ "loot" ] ) + "</p>" : "" )
 												+ "<p>--- <b>Description</b> ---\n" 
-												+ textBlock( fullText.slice( locTextStart, blockOffset ).trim()).replace( /\n/g, "<\p><p>") + "<\p>"
+												+ textBlock( fullText.slice( locTextStart, blockOffset ).trim()).replace( /\n/g, "</p><p>") + "</p>"
 												+ "<p>" + afterBlock.trim().replace( /\n/g, " ") + "</p>"			// afterBlock is the stat block.
 												).replace( /\n/g, "<br>" ));
 									}
